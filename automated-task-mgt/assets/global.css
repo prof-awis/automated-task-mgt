@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: black;
+  font-family: Arial;
+  font-size: 20px;
+  /* padding: 50px; */
+}
+
+.main {
+  background-color: white;
+  border-radius: 15px;
+  margin: 10px;
+  height: 100vh;
+  display: flex;
+}
+
+/* .main2 {
+   background-color: rgb(255, 255, 255); 
+   display: flex; 
+}
+ */
+
+.leftsidebar {
+  padding: 10px;
+  border-right: 2px solid black;
+  height: 100vh;
+}
+
+.icons {
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.rightsidebar {
+  display: flex;
+  flex-direction: column;
+  /* color: black; */
+  /* background-color: pink; */
+}
+
+.navbar {
+  padding: 10px;
+  margin-bottom: 10px;
+  /* display: flex;
+  flex-direction: row; */
+  /* background-color: blue; */
+}
+
+ul {
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  display: block;
+  float: left;
+  margin: 10px;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: blue;
+  color: white;
+}
+
+#search {
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 30px;
+  width: 100%;
+  outline: 0;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.below-navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  background-color: antiquewhite;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  /* height: 200px; */
+  /* width: 50%; */
+  /* background-color: powderblue; */
+}
