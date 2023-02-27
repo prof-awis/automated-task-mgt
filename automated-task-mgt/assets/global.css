@@ -13,7 +13,7 @@ body {
 }
 
 .main {
-  background-color: white;
+  background-color: rgb(255, 255, 255, 1);
   border-radius: 15px;
   margin: 10px;
   height: 100vh;
@@ -30,6 +30,21 @@ body {
   padding: 10px;
   border-right: 2px solid black;
   height: 100vh;
+}
+.profile-dtl {
+  text-align: center;
+}
+.profile-dtl img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid #152036;
+}
+.profile-dtl h2 {
+  font-size: 16px;
+  /* color: #000; */
+  font-weight: 400;
+  margin: 10px 0px 15px 0px;
 }
 
 .icons {
@@ -50,6 +65,29 @@ body {
   /* display: flex;
   flex-direction: row; */
   /* background-color: blue; */
+}
+.breadcome-heading a {
+  position: absolute;
+  top: 50%;
+  left: 178px;
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  width: 34px;
+  text-align: center;
+  /* color: #999; */
+  margin-top: -17px;
+}
+.form-control {
+  /* background-color: #cccec5; */
+  background-image: none;
+  border: 1px solid #447aaf;
+  border-radius: 5px;
+  /* color: inherit; */
+  display: block;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 20%;
 }
 
 ul {
