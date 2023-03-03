@@ -6,7 +6,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: linear-gradient(#e5e0ff, #fff2f2);
+  /* background: linear-gradient(#fff2f2, #fff2f2); */
+  background: #fff2f2;
 }
 
 .login-box {
@@ -37,7 +38,7 @@ body {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: blue;
+  color: black;
   margin-bottom: 30px;
   border: none;
   border-bottom: 1px solid #e5e0ff;
@@ -68,7 +69,8 @@ body {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #7286d3;
+  color: blue;
+  font-weight: bold;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -76,6 +78,7 @@ body {
   transition: 0.5s;
   margin-top: 40px;
   letter-spacing: 4px;
+  /* border-radius: 25px; */
 }
 
 .login-box a:hover {

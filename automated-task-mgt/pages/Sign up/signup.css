@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: linear-gradient(#e5e0ff, #fff2f2);
+  background: linear-gradient(#fff2f2);
 }
 
 .login-box {
@@ -68,7 +68,8 @@ body {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #7286d3;
+  color: blue;
+  font-weight: bold;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;

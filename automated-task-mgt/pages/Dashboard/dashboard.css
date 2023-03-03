@@ -70,18 +70,10 @@ body {
   height: 10vh;
   display: flex;
   align-items: center;
-  /* margin-bottom: 1rem; */
-  border-bottom: solid white;
-
-  /* background-color: antiquewhite; */
-}
-
-.logo-details i {
-  font-size: 30px;
-  font-weight: 500;
-  color: blue;
-  min-width: 60px;
-  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-bottom: 1px solid white;
+  column-gap: 0.5rem;
 }
 
 .logo-name {
@@ -106,58 +98,22 @@ body {
 
 .nav-links li a {
   color: blue;
-  background: #000;
-  display: block;
+  display: flex;
+  /* display: block; */
+  align-items: center;
+  /* justify-content: center; */
   text-decoration: none;
   font-weight: bold;
-  /* padding: 0.4rem 0.5rem; */
+  padding: 0.4rem 0.7rem;
   width: 100%;
-  /* width: inherit; */
+  border-radius: 1rem;
+  column-gap: 1rem;
 }
 
 .nav-links li a:hover {
   color: #000;
   background: #8b9bdb;
 }
-
-/* .links_name {
-  color: blue;
-} */
-/* 
-.nav-links li {
-  position: relative;
-  list-style: none;
-  height: 50px;
-  width: 100%;
-  border-radius: 30px;
-}
-
-.nav-links li a {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  transition: all 0.4s ease;
-}
-.nav-links li a.active {
-  background: #8ea7e9;
-}
-.nav-links li a:hover {
-  background: #8ea7e9;
-}
-.nav-links li i {
-  min-width: 60px;
-  text-align: center;
-  font-size: 18px;
-  color: #fff;
-}
-.nav-links li a .links_name {
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
-  white-space: nowrap;
-} */
 
 .home-section {
   background: #ffffff;
@@ -174,8 +130,11 @@ body {
   /* background-color: antiquewhite; */
 }
 
-.menu-bar {
+.menu-bar a {
   padding: 0 1rem;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
 }
 
 .lists {
@@ -186,22 +145,7 @@ body {
 .lists li {
   padding: 0 1rem;
 }
-.right-navbar {
-  display: flex;
-  /* justify-content: flex-end; */
-  justify-content: space-between;
-  align-items: center;
-  width: 20%;
-}
 
-.right-navbar span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: blue;
-  font-weight: bold;
-  padding: 0 2rem;
-}
 .user-image {
   display: flex;
   justify-content: space-between;
@@ -223,14 +167,39 @@ img {
 .left-below-navbar {
   width: 60%;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  display: flex;
+  /* margin: 1rem; */
+  /* flex-direction: row; */
+  margin-bottom: 1rem;
 }
 
-.calender,
-.content {
+.task,
+.calender {
   background: #fff2f2;
   border-radius: 15px;
-  padding: 10px;
-  margin: 10px;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.right-navbar {
+  display: flex;
+  /* justify-content: flex-end; */
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+}
+
+.right-navbar span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-weight: bold;
+  padding: 0 2rem;
 }
 
 table {
