@@ -39,6 +39,7 @@ body {
   background: #e5e0ff;
   /* transition: all 0.5s ease; */
   border-radius: 15px 0px 0px 15px;
+  /* visibility: visible; */
 }
 
 .sidebar.active {
@@ -61,6 +62,8 @@ body {
 .sidebar.active .nav-links li {
   margin: 0;
   margin: 0 auto;
+  height: 3rem;
+  width: 3rem;
 }
 .sidebar.active .links_name {
   display: none;
@@ -145,6 +148,22 @@ body {
 .lists li {
   padding: 0 1rem;
 }
+.right-navbar {
+  display: flex;
+  /* justify-content: flex-end; */
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+}
+
+.right-navbar span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-weight: bold;
+  padding: 0 2rem;
+}
 
 .user-image {
   display: flex;
@@ -170,37 +189,33 @@ img {
   display: flex;
   flex-direction: column;
 }
+
 .content {
   display: flex;
-  /* margin: 1rem; */
-  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 1rem;
 }
 
-.task,
+.task {
+  background: #fff2f2;
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 0.5rem;
+  /* flex-grow: 1; */
+}
+
 .calender {
   background: #fff2f2;
   border-radius: 15px;
   padding: 1rem;
   margin: 0.5rem;
+  width: 100%;
 }
 
-.right-navbar {
-  display: flex;
-  /* justify-content: flex-end; */
-  justify-content: space-between;
-  align-items: center;
-  width: 15%;
-}
-
-.right-navbar span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: blue;
-  font-weight: bold;
-  padding: 0 2rem;
-}
+/* .right-below-navbar {
+   width: auto; 
+} */
 
 table {
   border-collapse: collapse;
