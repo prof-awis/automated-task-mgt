@@ -121,7 +121,6 @@ body {
 
 .home-section {
   background: #ffffff;
-  /* margin-left: 20rem; */
 }
 .nav-bar {
   display: flex;
@@ -132,10 +131,6 @@ body {
   border-radius: 0 15px 0 0;
   height: 10vh;
   background: #e5e0ff;
-  /* top: 0; */
-  /* left: 0; */
-  /* position: fixed; */
-  /* background-color: antiquewhite; */
 }
 
 .menu-bar a {
@@ -155,7 +150,6 @@ body {
 }
 .right-navbar {
   display: flex;
-  /* justify-content: flex-end; */
   justify-content: space-between;
   align-items: center;
   width: 15%;
