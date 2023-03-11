@@ -39,8 +39,7 @@ body {
   background: #e5e0ff;
   /* transition: all 0.5s ease; */
   border-radius: 15px 0px 0px 15px;
-  /* visibility: visible; */
-  /* position: fixed; */
+  
 }
 
 .sidebar.active {
