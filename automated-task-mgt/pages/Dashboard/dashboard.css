@@ -39,7 +39,6 @@ body {
   background: #e5e0ff;
   /* transition: all 0.5s ease; */
   border-radius: 15px 0px 0px 15px;
-  
 }
 
 .sidebar.active {
@@ -226,6 +225,23 @@ img {
   margin: 1rem 1rem;
   /* padding: 1rem 1rem; */
   width: 30%;
+}
+
+.add-task {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0rem 2rem 2rem 3rem;
+  /* background-color: #000; */
+}
+
+.add-task .button {
+  background: #447aaf;
+  border: 1px solid #414141;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  color: #fff;
 }
 
 .calendar-container {
