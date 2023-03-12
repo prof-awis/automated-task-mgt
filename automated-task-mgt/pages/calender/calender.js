@@ -1,14 +1,5 @@
 "use strict";
 
-let sidebar = document.querySelector(".sidebar");
-let menubar = document.querySelector(".sidebarBtn");
-
-menubar.onclick = function () {
-  sidebar.classList.toggle("active");
-};
-
-//! Warning the js that follows is all about the calender
-
 let date = new Date();
 let year = date.getFullYear();
 let month = date.getMonth();

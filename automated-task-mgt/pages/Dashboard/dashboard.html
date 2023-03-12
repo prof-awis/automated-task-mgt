@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>Dashboard</title>
   </head>
   <body>
@@ -132,9 +136,14 @@
                   fill="blue"
                 >
                   <path
-                    d="M19,1H5A5.006,5.006,0,0,0,0,6V18a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6A5.006,5.006,0,0,0,19,1ZM5,3H19a3,3,0,0,1,2.78,1.887l-7.658,7.659a3.007,3.007,0,0,1-4.244,0L2.22,4.887A3,3,0,0,1,5,3ZM19,21H5a3,3,0,0,1-3-3V7.5L8.464,13.96a5.007,5.007,0,0,0,7.072,0L22,7.5V18A3,3,0,0,1,19,21Z"
+                    d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Zm0,22A10,10,0,1,1,22,12,10.011,10.011,0,0,1,12,22Z"
                   />
+                  <path
+                    d="M12,10H11a1,1,0,0,0,0,2h1v6a1,1,0,0,0,2,0V12A2,2,0,0,0,12,10Z"
+                  />
+                  <circle cx="12" cy="6.5" r="1.5" />
                 </svg>
+
                 <span class="links_name">About Us</span>
               </a>
             </li>
@@ -177,6 +186,7 @@
                 src="../../assets/images/0acea755-eac4-4966-b4c0-f16b678a52b7.jpg"
                 alt="user pic"
               />
+              <!-- <b class="caret"></b> -->
             </div>
           </div>
         </nav>
@@ -185,7 +195,7 @@
           <div class="left-below-navbar">
             <div>
               <h1>TASKS</h1>
-              <hr />
+              <!-- <hr /> -->
             </div>
 
             <div class="content">
@@ -230,7 +240,7 @@
             <div>
               <div>
                 <h1>UPCOMING TASKS</h1>
-                <hr />
+                <!-- <hr /> -->
               </div>
               <div class="content">
                 <div class="task">
@@ -261,7 +271,7 @@
               <div>
                 <div>
                   <h1>DID YOU KNOW ?</h1>
-                  <hr />
+                  <!-- <hr /> -->
                 </div>
                 <div class="content">
                   <div class="task">
@@ -280,80 +290,31 @@
           </div>
 
           <div class="right-below-navbar">
-            <div class="calender">
-              <table>
-                <caption>
-                  March 2023
-                </caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Sun</th>
-                    <th scope="col">Mon</th>
-                    <th scope="col">Tue</th>
-                    <th scope="col">Wed</th>
-                    <th scope="col">Thu</th>
-                    <th scope="col">Fri</th>
-                    <th scope="col">Sat</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>1</td>
-                    <td class="today">2</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                  </tr>
-                  <tr>
-                    <td>10</td>
-                    <td>11</td>
-                    <td>12</td>
-                    <td>13</td>
-                    <td>14</td>
-                    <td>15</td>
-                    <td>16</td>
-                  </tr>
-                  <tr>
-                    <td>17</td>
-                    <td>18</td>
-                    <td>19</td>
-                    <td>20</td>
-                    <td>21</td>
-                    <td>22</td>
-                    <td>23</td>
-                  </tr>
-                  <tr>
-                    <td>24</td>
-                    <td>25</td>
-                    <td>26</td>
-                    <td>27</td>
-                    <td>28</td>
-                    <td>29</td>
-                    <td>30</td>
-                  </tr>
-                  <tr>
-                    <td>31</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <!-- Continue for the rest of the days -->
-                </tbody>
-              </table>
+            <div class="calendar-container">
+              <header class="calendar-header">
+                <p class="calendar-current-date"></p>
+                <div class="calendar-navigation">
+                  <span id="calendar-prev" class="material-symbols-rounded">
+                    chevron_left
+                  </span>
+                  <span id="calendar-next" class="material-symbols-rounded">
+                    chevron_right
+                  </span>
+                </div>
+              </header>
+
+              <div class="calendar-body">
+                <ul class="calendar-weekdays">
+                  <li>Sun</li>
+                  <li>Mon</li>
+                  <li>Tue</li>
+                  <li>Wed</li>
+                  <li>Thu</li>
+                  <li>Fri</li>
+                  <li>Sat</li>
+                </ul>
+                <ul class="calendar-dates"></ul>
+              </div>
             </div>
           </div>
         </div>

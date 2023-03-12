@@ -1,76 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <title>Calendar</title>
-    <style>
-      table {
-        border-collapse: collapse;
-        width: 100%;
-      }
-
-      th,
-      td {
-        border: 1px solid black;
-        padding: 10px;
-        text-align: center;
-      }
-
-      th {
-        background-color: #ddd;
-      }
-
-      td {
-        background-color: #fff;
-      }
-
-      td:hover {
-        background-color: #f5f5f5;
-      }
-
-      .today {
-        background-color: #ff0;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./calender.css" />
   </head>
 
   <body>
-    <table>
-      <caption>
-        March 2023
-      </caption>
-      <thead>
-        <tr>
-          <th scope="col">Sun</th>
-          <th scope="col">Mon</th>
-          <th scope="col">Tue</th>
-          <th scope="col">Wed</th>
-          <th scope="col">Thu</th>
-          <th scope="col">Fri</th>
-          <th scope="col">Sat</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>1</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td>7</td>
-          <td>8</td>
-          <td>9</td>
-        </tr>
-        <!-- Continue for the rest of the days -->
-      </tbody>
-    </table>
+    <div class="calendar-container">
+      <header class="calendar-header">
+        <p class="calendar-current-date"></p>
+        <div class="calendar-navigation">
+          <span id="calendar-prev" class="material-symbols-rounded">
+            chevron_left
+          </span>
+          <span id="calendar-next" class="material-symbols-rounded">
+            chevron_right
+          </span>
+        </div>
+      </header>
+
+      <div class="calendar-body">
+        <ul class="calendar-weekdays">
+          <li>Sun</li>
+          <li>Mon</li>
+          <li>Tue</li>
+          <li>Wed</li>
+          <li>Thu</li>
+          <li>Fri</li>
+          <li>Sat</li>
+        </ul>
+        <ul class="calendar-dates"></ul>
+      </div>
+    </div>
+
+    <script src="./calender.js"></script>
   </body>
 </html>
